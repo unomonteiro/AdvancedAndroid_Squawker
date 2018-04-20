@@ -16,6 +16,7 @@
 
 package android.example.com.squawker;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.example.com.squawker.following.FollowingPreferenceActivity;
@@ -85,6 +86,21 @@ public class MainActivity extends AppCompatActivity implements
 
         // Start the loader
         getSupportLoaderManager().initLoader(LOADER_ID_MESSAGES, null, this);
+
+//        //dummy data
+//        ContentValues values = new ContentValues();
+//        values.put(SquawkContract.COLUMN_DATE, 1487968810557L);
+//        values.put(SquawkContract.COLUMN_AUTHOR_KEY, SquawkContract.LYLA_KEY);
+//        values.put(SquawkContract.COLUMN_AUTHOR, "TheRealLyla");
+//        values.put(SquawkContract.COLUMN_MESSAGE, "My nose itches");
+//        getContentResolver().insert(SquawkProvider.SquawkMessages.CONTENT_URI, values);
+//
+//        values.put(SquawkContract.COLUMN_DATE, 1487968811043L);
+//        values.put(SquawkContract.COLUMN_AUTHOR_KEY, SquawkContract.ASSER_KEY);
+//        values.put(SquawkContract.COLUMN_AUTHOR, "TheRealAsser");
+//        values.put(SquawkContract.COLUMN_MESSAGE, "I have the best hat");
+//        getContentResolver().insert(SquawkProvider.SquawkMessages.CONTENT_URI, values);
+
 
     }
 
