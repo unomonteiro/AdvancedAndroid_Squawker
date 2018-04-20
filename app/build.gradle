@@ -3,7 +3,7 @@ apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "android.example.com.squawker"
         minSdkVersion 16
@@ -42,5 +42,9 @@ dependencies {
     // google.services.json file in the app folder. After syncing the changes, you should be able
     // to send a notification to your app using the Firebase console. The app must be in the
     // background!
+    compile 'com.google.firebase:firebase-core:12.0.1'
 
 }
+
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'
